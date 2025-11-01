@@ -3,34 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DhofarCare – Smart Home Services in Dhofar</title>
+  <title>DhofarCare – Smart Digital Platform for Home Services</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-  <!-- ============ TOP BAR ============ -->
   <div class="topbar">
-    <div class="tb-left">
-      <span class="item">📍 Dhofar, Oman</span>
-      <span class="item">📞 +968 72 345 678</span>
-      <span class="item">🟢 WhatsApp: +968 92 345 678</span>
-      <span class="item">✉️ hello@dhofarcare.om</span>
-    </div>
-    <div class="tb-right">
-      <a href="#booking" class="top-btn">Book Now</a>
-    </div>
+    <span>📍 Dhofar, Oman</span>
+    <span>📞 +968 72 345 678</span>
+    <span>🟢 WhatsApp: +968 92 345 678</span>
+    <span>✉️ hello@dhofarcare.om</span>
   </div>
 
-  <!-- ============ NAV ============ -->
   <header class="navbar">
-    <div class="logo-wrap">
-      <img src="assets/logo.png" alt="DhofarCare logo" class="logo" />
-      <div class="logo-text">
-        <h1>DhofarCare</h1>
-        <p>Smart Home Services Platform</p>
-      </div>
-    </div>
-    <nav class="nav-links">
+    <img src="assets/logo.png" class="logo" alt="DhofarCare" />
+    <nav>
       <a href="#hero">Home</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
@@ -39,216 +27,68 @@
       <a href="#booking">Book</a>
     </nav>
   </header>
-  <!-- ============ VIDEO SECTION ============ -->
-<section id="intro-video" class="intro-video">
-  <video autoplay muted loop playsinline>
-    <source src="hero-video.mp4.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  <div class="video-overlay">
-    <h2>Welcome to DhofarCare</h2>
-    <p>Smart Digital Platform for Home Services and Local Entrepreneurship in Dhofar</p>
-  </div>
-</section>
 
-  <!-- ============ HERO ============ -->
   <section id="hero" class="hero">
-    <!-- لو حابة فيديو، خلي الفيديو تحت، لو حابة صورة بس خليه كذا -->
-    <div class="hero-overlay">
-      <p class="eyebrow">Welcome to DhofarCare</p>
-      <h2>Home services for Dhofar areas with AI assistant, cloud booking, and VR preview.</h2>
-      <p class="desc">
-        We connect customers in Salalah, Taqah, Mirbat and other Dhofar areas with trusted, verified service providers.
-      </p>
-      <div class="hero-actions">
-        <a href="#booking" class="btn primary">Book a Service</a>
-        <a href="#media" class="btn ghost">Watch Demo</a>
-      </div>
-      <div class="hero-tags">
-        <span>✓ 24/7 available</span>
-        <span>✓ Dhofar only</span>
-        <span>✓ Auto-reply in English</span>
-      </div>
+    <video autoplay muted loop playsinline>
+      <source src="assets/hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+      <h1>Welcome to DhofarCare</h1>
+      <p>A Smart Digital Platform for Home Services and Local Entrepreneurship in Dhofar.</p>
+      <a href="#booking" class="btn">Book Now</a>
     </div>
   </section>
 
-  <!-- ============ ABOUT ============ -->
-  <section id="about" class="section">
-    <h3>About DhofarCare</h3>
-    <p>
-      DhofarCare is a smart digital platform that helps families, dorms, offices, and small businesses request home
-      services online. The system uses AI to answer customers, cloud to store bookings, and VR/video to show service
-      previews for your university/demo.
-    </p>
+  <section id="about">
+    <h2>About DhofarCare</h2>
+    <p>DhofarCare connects customers with trusted local service providers using AI, Cloud, and VR.</p>
   </section>
 
-  <!-- ============ SERVICES ============ -->
-  <section id="services" class="section">
-    <h3>Available Services</h3>
-    <p class="section-desc">All services are available inside Dhofar governorate.</p>
-    <div class="services-grid">
-      <div class="card">🧹 Home Cleaning</div>
-      <div class="card">❄️ AC Maintenance</div>
-      <div class="card">🚰 Plumbing & Leak Fix</div>
-      <div class="card">💡 Electrical Repairs</div>
-      <div class="card">🎨 Painting & Décor</div>
-      <div class="card">📹 CCTV / Smart Home</div>
-      <div class="card">🚗 Mobile Car Wash</div>
-      <div class="card">🌿 Gardening / Outdoors</div>
-      <div class="card">👩‍🦰 Ladies Home Salon</div>
-      <div class="card">📦 Moving / Furniture</div>
-    </div>
-    <p class="note">
-      Pricing: most services start from 5–10 OMR for basic jobs, 15–25 OMR for AC, plumbing, and electrical.
-      Final price depends on technician and your area.
-    </p>
+  <section id="services">
+    <h2>Available Services</h2>
+    <ul>
+      <li>🧹 Cleaning</li>
+      <li>💡 Electrical</li>
+      <li>🚰 Plumbing</li>
+      <li>❄️ AC Maintenance</li>
+      <li>🎨 Painting</li>
+    </ul>
   </section>
 
-  <!-- ============ AI / CLOUD / VR ============ -->
-  <section id="ai" class="section">
-    <h3>AI • Cloud • VR</h3>
-    <div class="ai-grid">
-      <div class="ai-box">
-        <h4>AI auto-reply</h4>
-        <p>Customer asks about services, price, working time, or areas → system answers immediately.</p>
-      </div>
-      <div class="ai-box">
-        <h4>Cloud booking</h4>
-        <p>All booking forms are stored in the cloud (you can connect Firebase later).</p>
-      </div>
-      <div class="ai-box">
-        <h4>VR / Video</h4>
-        <p>Show maintenance / home services video in the homepage for your presentation.</p>
-      </div>
-    </div>
+  <section id="ai">
+    <h2>AI • Cloud • VR</h2>
+    <p>AI chatbot helps customers, cloud stores data securely, and VR shows service previews.</p>
   </section>
 
-  <!-- ============ BUSINESS MODEL ============ -->
-  <section id="business" class="section">
-    <h3>Business Model Canvas</h3>
-    <div class="bmc">
-      <div>
-        <h4>Customer Segments</h4>
-        <p>Families, university students, women-led SMEs, offices, tourism houses.</p>
-      </div>
-      <div>
-        <h4>Value Proposition</h4>
-        <p>Dhofar-only, trusted technicians, fast booking, auto-reply, cloud history.</p>
-      </div>
-      <div>
-        <h4>Channels</h4>
-        <p>Website, WhatsApp, social media, university portal.</p>
-      </div>
-      <div>
-        <h4>Revenue Streams</h4>
-        <p>Commission per job, provider subscription, premium/VR ads.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ MEDIA ============ -->
-  <section id="media" class="section">
-    <h3>Media & Gallery</h3>
-    <div class="media-wrap">
-      <div class="image-box">
-        <img src="assets/home-services.jpg" alt="Home services" />
-        <p>Sample categories for DhofarCare.</p>
-      </div>
-      <div class="image-box">
-        <img src="assets/platform-3d.png" alt="Platform 3D" />
-        <p>AI • Cloud • VR visualization.</p>
-      </div>
-      <div class="video-box">
-        <iframe width="100%" height="210" src="https://www.youtube.com/embed/Qxz6Gk6pCug"
-          title="Home services demo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ BOOKING FORM ============ -->
-  <section id="booking" class="section booking">
-    <h3>Book a Service</h3>
-    <p>Fill this form. You will get a success message. Admin will receive details by email (when connected).</p>
+  <section id="booking">
+    <h2>Book a Service</h2>
     <form id="booking-form">
-      <label>Full name *</label>
-      <input type="text" name="name" required />
-
-      <label>Email *</label>
-      <input type="email" name="email" required />
-
-      <label>Phone / WhatsApp *</label>
-      <input type="tel" name="phone" required />
-
-      <label>Area in Dhofar *</label>
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="tel" name="phone" placeholder="Phone" required />
       <select name="area" required>
-        <option value="">-- select your area --</option>
+        <option value="">Select Area</option>
         <option>Salalah</option>
         <option>Taqah</option>
         <option>Mirbat</option>
         <option>Thumrait</option>
-        <option>Rakhyut</option>
-        <option>Dhalkut</option>
       </select>
-
-      <label>Service type *</label>
       <select name="service" required>
-        <option value="">-- select service --</option>
+        <option value="">Select Service</option>
         <option>Cleaning</option>
-        <option>AC Maintenance</option>
-        <option>Plumbing</option>
         <option>Electrical</option>
-        <option>Painting</option>
-        <option>Other</option>
+        <option>AC Maintenance</option>
       </select>
-
-      <label>Preferred date & time *</label>
-      <input type="datetime-local" name="datetime" lang="en" required />
-
-      <label>Extra notes</label>
-      <textarea name="notes" rows="3" placeholder="Describe the issue..."></textarea>
-
-      <button type="submit" class="btn primary wide">Submit request</button>
+      <input type="datetime-local" name="datetime" required />
+      <button type="submit" class="btn">Submit Request</button>
     </form>
-
-    <div id="success-modal" class="modal hidden">
-      <div class="modal-content">
-        <h4>✅ Your request has been submitted successfully!</h4>
-        <p>We received your booking. We will contact you after assigning the technician.</p>
-        <button onclick="closeModal()" class="btn small">Close</button>
-      </div>
+    <div id="success-message" class="hidden">
+      ✅ Your request has been submitted successfully!
     </div>
   </section>
 
-  <!-- ============ FOOTER ============ -->
-  <footer class="footer">
-    <p>© 2025 DhofarCare – Smart Digital Platform for Home Services and Local Entrepreneurship in Dhofar.</p>
+  <footer>
+    <p>© 2025 DhofarCare. All Rights Reserved.</p>
   </footer>
-
-  <!-- ============ AI CHATBOT ============ -->
-  <div class="chatbot" id="chatbot">
-    <div class="chat-header" onclick="toggleChat()">
-      🤖 DhofarCare AI Assistant
-    </div>
-    <div class="chat-body" id="chat-body">
-      <div class="msg bot">
-        Welcome to DhofarCare 👋 We provide home services in Dhofar.
-      </div>
-      <div class="msg bot">
-        How can I help you today? You can ask: <br>
-        • what services? <br>
-        • are you 24/7? <br>
-        • what is the price? <br>
-        • which areas?
-      </div>
-    </div>
-    <div class="chat-input">
-      <input type="text" id="chat-input" placeholder="Ask in English..." onkeydown="if(event.key==='Enter'){sendMessage();}" />
-      <button onclick="sendMessage()">Send</button>
-    </div>
-  </div>
-  <button class="chat-toggle" onclick="toggleChat()">💬</button>
-
-  <script src="firebase-config.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
