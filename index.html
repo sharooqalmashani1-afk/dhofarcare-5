@@ -3,13 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DhofarCare – Smart Home Services in Dhofar</title>
+  <title>DhofarCare – Smart Digital Platform for Home Services</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Welcome to DhofarCare</h1>
-  <p>This is a modern AI-powered platform for home services in Dhofar, Oman.</p>
+  <div class="topbar">
+    <span>📍 Dhofar, Oman</span>
+    <span>📞 +968 72 345 678</span>
+    <span>🟢 WhatsApp: +968 92 345 678</span>
+    <span>✉️ hello@dhofarcare.om</span>
+  </div>
+
+  <header class="navbar">
+    <img src="assets/logo.png" class="logo" alt="DhofarCare" />
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#ai">AI • Cloud • VR</a>
+      <a href="#business">Business Model</a>
+      <a href="#booking">Book</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="assets/hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+      <h1>Welcome to DhofarCare</h1>
+      <p>A Smart Digital Platform for Home Services and Local Entrepreneurship in Dhofar.</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About DhofarCare</h2>
+    <p>DhofarCare connects customers with trusted local service providers using AI, Cloud, and VR.</p>
+  </section>
+
+  <section id="services">
+    <h2>Available Services</h2>
+    <ul>
+      <li>🧹 Cleaning</li>
+      <li>💡 Electrical</li>
+      <li>🚰 Plumbing</li>
+      <li>❄️ AC Maintenance</li>
+      <li>🎨 Painting</li>
+    </ul>
+  </section>
+
+  <section id="ai">
+    <h2>AI • Cloud • VR</h2>
+    <p>AI chatbot helps customers, cloud stores data securely, and VR shows service previews.</p>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Service</h2>
+    <form id="booking-form">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="tel" name="phone" placeholder="Phone" required />
+      <select name="area" required>
+        <option value="">Select Area</option>
+        <option>Salalah</option>
+        <option>Taqah</option>
+        <option>Mirbat</option>
+        <option>Thumrait</option>
+      </select>
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option>Cleaning</option>
+        <option>Electrical</option>
+        <option>AC Maintenance</option>
+      </select>
+      <input type="datetime-local" name="datetime" required />
+      <button type="submit" class="btn">Submit Request</button>
+    </form>
+    <div id="success-message" class="hidden">
+      ✅ Your request has been submitted successfully!
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 DhofarCare. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
